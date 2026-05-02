@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio profesional - Web Developer & UI/UX Designer kreatif" />
+  <title>Agam | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket"></span>AGAM<span class="brand-bracket"></span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" id="nav-home">Home</a>
+      <a href="#about" class="nav-link" id="nav-about">About</a>
+      <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+      <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+      <a href="#certifications" class="nav-link" id="nav-certifications">Certifications</a>
+      <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ Available for Work</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">AGAM</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Passionate about crafting beautiful, performant web experiences that make a real impact.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">Lihat project</a>
+        <a href="#contact" class="btn btn-outline" id="hero-contact-btn">Hubungi saya☎️</a>
+      </div>
+      <div class="hero-scroll" id="heroScroll">
+        <span>Scroll Down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrapper" id="imgWrapper">
+        <img src="foto formal.JPG" alt="Agama Profile" class="hero-img" id="profileImg" />
+        <div class="img-upload-overlay" id="imgUploadOverlay" title="Klik untuk ganti foto">
+          <div class="upload-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17 8 12 3 7 8" />
+              <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
+            <span>Ganti Foto</span>
+          </div>
+        </div>
+        <input type="file" id="photoInput" accept="image/*" style="display:none" />
+        <div class="img-ring ring1"></div>
+        <div class="img-ring ring2"></div>
+        <div class="img-glow"></div>
+      </div>
+      <div class="floating-card card1">
+        <span class="card-icon">🚀</span>
+        <div>
+          <div class="card-title">Projects Done</div>
+          <div class="card-value">20+</div>
+        </div>
+      </div>
+      <div class="floating-card card2">
+        <span class="card-icon">⭐</span>
+        <div>
+          <div class="card-title">Happy Clients</div>
+          <div class="card-value">15+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Saya adalah <strong>mahasiswa aktif program studi S1 Teknik Informatika semester 4</strong> di Universitas
+            Pahlawan Tuanku Tambusai, Bangkinang Kota, Kabupaten Kampar, Riau. Dengan latar belakang akademik di bidang
+            teknologi informasi, saya memiliki ketertarikan yang kuat dalam pengembangan perangkat lunak, kecerdasan
+            buatan, dan solusi digital berbasis web.
+          </p>
+          <p>
+            Selama masa studi, saya telah terlibat dalam berbagai proyek nyata, di antaranya pengembangan <strong>AI
+              Startup</strong>, <strong>platform marketplace berbasis pendidikan</strong>, serta <strong>website untuk
+              pelaku UMKM</strong>. Pengalaman tersebut membentuk kemampuan saya dalam merancang dan
+            mengimplementasikan solusi teknologi yang berdampak langsung bagi masyarakat.
+          </p>
+          <p>
+            Secara teknis, saya menguasai sejumlah teknologi pengembangan web dan sistem, meliputi <strong>HTML, CSS,
+              JavaScript, Python, Flask, MySQL</strong>, serta familiar dengan lingkungan sistem operasi Linux. Saya
+            terus berkomitmen untuk mengembangkan kompetensi teknis secara berkelanjutan seiring perkembangan industri.
+          </p>
+          <p>
+            Saya dikenal sebagai individu yang memiliki <strong>etos kerja tinggi</strong>, mampu bekerja secara
+            disiplin sesuai dengan Standar Operasional Prosedur (SOP), serta responsif dalam menyelesaikan tugas secara
+            efisien. Saya percaya bahwa kolaborasi yang baik dan dedikasi penuh adalah kunci dalam menghasilkan karya
+            teknologi yang berkualitas.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">20+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">15+</div>
+              <div class="stat-label">Clients</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" id="download-cv-btn" download>Download CV</a>
+        </div>
+        <div class="about-cards">
+          <div class="info-card" id="info-card-1">
+            <div class="info-icon">💻</div>
+            <h3>Frontend Dev</h3>
+            <p>Membangun UI yang responsif dan interaktif dengan teknologi terkini.</p>
+          </div>
+          <div class="info-card" id="info-card-2">
+            <div class="info-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Merancang pengalaman pengguna yang intuitif dan estetis.</p>
+          </div>
+          <div class="info-card" id="info-card-3">
+            <div class="info-icon">⚙️</div>
+            <h3>Backend Dev</h3>
+            <p>Mengembangkan API dan sistem server yang handal dan skalabel.</p>
+          </div>
+          <div class="info-card" id="info-card-4">
+            <div class="info-icon">📱</div>
+            <h3>Mobile Ready</h3>
+            <p>Memastikan setiap produk berjalan sempurna di semua perangkat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item" id="skill-html">
+              <div class="skill-header"><span>HTML</span><span>95%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="95"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-css">
+              <div class="skill-header"><span>CSS</span><span>90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="90"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-js">
+              <div class="skill-header"><span>JavaScript</span><span>85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="85"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-react">
+              <div class="skill-header"><span>React.js</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item" id="skill-node">
+              <div class="skill-header"><span>Node.js</span><span>75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="75"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-python">
+              <div class="skill-header"><span>Python</span><span>70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="70"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-mysql">
+              <div class="skill-header"><span>MySQL</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="80"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-php">
+              <div class="skill-header"><span>flask</span><span>72%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="72"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Linux</span>
+            <span class="tag">PhpMyAdmin</span>
+            <span class="tag">claude ai</span>
+            <span class="tag">antigravity ai</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web App</button>
+        <button class="filter-btn" data-filter="ui" id="filter-ui">UI/UX</button>
+        <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-cat="web" id="proj-1">
+          <div class="project-img">
+            <img src="project.JPG" alt="E-Commerce Platform" class="proj-img-custom"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="project-placeholder" style="background: linear-gradient(135deg,#667eea,#764ba2);">
+              <span class="project-icon">🛒</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-1-demo">Live Demo</a>
+              <a href="#" class="proj-link" id="proj-1-code">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag">html</span><span class="ptag">javascript,css</span><span
+                class="ptag">flask,MySQL</span></div>
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">Platform belanja online berbasis pendidikan modern dengan desain yang
+              menarik,responsif,dan mudah digunakan,dengan konsep ui/ux web seperti tokopedia.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ui" id="proj-2">
+          <div class="project-img">
+            <img src="project ai.png" alt="Analytics Dashboard" class="proj-img-custom"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="project-placeholder" style="background: linear-gradient(135deg,#f093fb,#f5576c);">
+              <span class="project-icon">📊</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-2-demo">Live Demo</a>
+              <a href="#" class="proj-link" id="proj-2-code">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag">Figma</span><span class="ptag">CSS</span><span
+                class="ptag">JS</span></div>
+            <h3 class="project-title">Ai Dashboard</h3>
+            <p class="project-desc">ai startup corp,ai khusus perusahaan untuk membantu pengerjaan tugas secara realtime
+              dan sesuai dengan arahan dari atasan</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="mobile" id="proj-3">
+          <div class="project-img">
+            <img src="project absensi sekolah.png" alt="Chat App" class="proj-img-custom"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="project-placeholder" style="background: linear-gradient(135deg,#4facfe,#00f2fe);">
+              <span class="project-icon">💬</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-3-demo">Live Demo</a>
+              <a href="#" class="proj-link" id="proj-3-code">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag">React Native</span><span class="ptag">Firebase</span></div>
+            <h3 class="project-title">Aplikasi Absensi sekolah</h3>
+            <p class="project-desc">sebuah aplikasi absensi sekolah berbasis mobile,dapat memantau kehadiran siswa
+              secara realtime dan melapor kehadiran siswa ke orang tua.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="web" id="proj-4">
+          <div class="project-img">
+            <img src="project blokchain.png" alt="Blog Platform" class="proj-img-custom"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="project-placeholder" style="background: linear-gradient(135deg,#43e97b,#38f9d7);">
+              <span class="project-icon">📝</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-4-demo">Live Demo</a>
+              <a href="#" class="proj-link" id="proj-4-code">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag">React.js</span><span class="ptag">figma</span><span
+                class="ptag">blokchain</span></div>
+            <h3 class="project-title">blokchain</h3>
+            <p class="project-desc">Platform digital mobile guna menyimpan dan mengirim uang dari dalam negeri maupun
+              luar negeri,dengan keamanan yang sangat ketat dan terjaga.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ui" id="proj-5">
+          <div class="project-img">
+            <img src="apk hitung barang.png" alt="Fitness App UI" class="proj-img-custom"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="project-placeholder" style="background: linear-gradient(135deg,#fa709a,#fee140);">
+              <span class="project-icon">🏋️</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-5-demo">Live Demo</a>
+              <a href="#" class="proj-link" id="proj-5-code">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag">Figma</span><span class="ptag">css,javascript,React</span>
+            </div>
+            <h3 class="project-title">Aplikasi hitung barang mobile</h3>
+            <p class="project-desc">sebuah aplikasi guna hitung jumlah barang baik itu barang keluar atau masuk,di
+              sebuah perusahaan,dengan data yang langsung di convert ke excel.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="web" id="proj-6">
+          <div class="project-img">
+            <img src="apk generate cv(surat lamaran kerja).png" alt="AI Chatbot" class="proj-img-custom"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="project-placeholder" style="background: linear-gradient(135deg,#a18cd1,#fbc2eb);">
+              <span class="project-icon">🤖</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-6-demo">Live Demo</a>
+              <a href="#" class="proj-link" id="proj-6-code">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag">Python</span><span class="ptag">FastAPI</span><span
+                class="ptag">AI</span></div>
+            <h3 class="project-title">cv mobile</h3>
+            <p class="project-desc">sebuah aplikasi mobile membuat cv dengan template yang menarik,dan memudahkan
+              seseorang untuk membuat cv sesuai dengan sistematika pada umumnya</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Certifications -->
+
+      <section class="section certifications" id="certifications">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">My Achievements</span>
+            <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+          </div>
+          <div class="cert-grid">
+
+            <!-- Sertifikat 1 -->
+            <div class="cert-card" id="cert-1">
+              <div class="cert-img-wrapper">
+                <img src="sertifikasi 1.jpeg" alt="Sertifikasi 1" class="cert-img"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="cert-placeholder" style="background:linear-gradient(135deg,#667eea,#764ba2);">
+                  <span class="cert-icon">🏆</span>
+                </div>
+                <div class="cert-overlay">
+                  <span class="cert-zoom">🔍 Lihat</span>
+                </div>
+              </div>
+              <div class="cert-info">
+                <div class="cert-badge">
+                  <span class="cert-tag">python</span>
+                </div>
+                <h3 class="cert-title">Sertifikat komputasi ilmiah dengan python</h3>
+                <p class="cert-desc">mewakili sekitar 300 jam pembelajaran. Mencakup komputasi ilmiah menggunakan
+                  Python.
+                </p>
+                <div class="cert-meta">
+                  <span class="cert-issuer">📌 Freecodecamp</span>
+                  <span class="cert-year">📅 11 September 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sertifikat 2 -->
+            <div class="cert-card" id="cert-2">
+              <div class="cert-img-wrapper">
+                <img src="sertifikasi 2.jpeg" alt="Sertifikasi 2" class="cert-img"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="cert-placeholder" style="background:linear-gradient(135deg,#f093fb,#f5576c);">
+                  <span class="cert-icon">🎓</span>
+                </div>
+                <div class="cert-overlay">
+                  <span class="cert-zoom">🔍 Lihat</span>
+                </div>
+              </div>
+              <div class="cert-info">
+                <div class="cert-badge">
+                  <span class="cert-tag">html,css,JavaScript</span>
+                </div>
+                <h3 class="cert-title">Desain Web Responsif</h3>
+                <p class="cert-desc">mewakili sekitar 300 jam pembelajaran,Mencakup pembuatan tampilan web yang adaptif
+                  di
+                  berbagai perangkat menggunakan HTML & CSS.</p>
+                <div class="cert-meta">
+                  <span class="cert-issuer">📌 Freecodecamp</span>
+                  <span class="cert-year">📅 3 Agustus 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sertifikat 3 -->
+            <div class="cert-card" id="cert-3">
+              <div class="cert-img-wrapper">
+                <img src="sertifikasi 3.jpeg" alt="Sertifikasi 3" class="cert-img"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="cert-placeholder" style="background:linear-gradient(135deg,#4facfe,#00f2fe);">
+                  <span class="cert-icon">🐍⚙️</span>
+                </div>
+                <div class="cert-overlay">
+                  <span class="cert-zoom">🔍 Lihat</span>
+                </div>
+              </div>
+              <div class="cert-info">
+                <div class="cert-badge">
+                  <span class="cert-tag">Python</span>
+                </div>
+                <h3 class="cert-title">Machine Learning with Python</h3>
+                <p class="cert-desc">mewakili sekitar 300 jam pembelajaran. Mencakup konsep dan implementasi machine
+                  learning menggunakan Python.</p>
+                <div class="cert-meta">
+                  <span class="cert-issuer">📌 Freecodecamp</span>
+                  <span class="cert-year">📅 17 September 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sertifikat 4 -->
+            <div class="cert-card" id="cert-4">
+              <div class="cert-img-wrapper">
+                <img src="sertifikasi 4.jpeg" alt="Sertifikasi 4" class="cert-img"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="cert-placeholder" style="background:linear-gradient(135deg,#43e97b,#38f9d7);">
+                  <span class="cert-icon">🌐</span>
+                </div>
+                <div class="cert-overlay">
+                  <span class="cert-zoom">🔍 Lihat</span>
+                </div>
+              </div>
+              <div class="cert-info">
+                <div class="cert-badge">
+                  <span class="cert-tag">C#</span>
+                </div>
+                <h3 class="cert-title">Foundational C# with Microsoft</h3>
+                <p class="cert-desc">Mencakup dasar-dasar pemrograman C# yang diakui langsung oleh Microsoft Developer
+                  Division.</p>
+                <div class="cert-meta">
+                  <span class="cert-issuer">📌 Freecodecamp</span>
+                  <span class="cert-year">📅 13 September 2025</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox -->
+      <div class="cert-lightbox" id="certLightbox">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-content">
+          <button class="lightbox-close" id="lightboxClose">✕</button>
+          <img src="" alt="Sertifikat" id="lightboxImg" />
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p class="contact-desc">Punya proyek menarik? Mari kita diskusikan dan wujudkan ide Anda menjadi
+                kenyataan!
+              </p>
+              <div class="contact-items">
+                <div class="contact-item" id="contact-email">
+                  <div class="contact-icon">📧</div>
+                  <div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-val">agam06614@gmail.com</div>
+                  </div>
+                </div>
+                <div class="contact-item" id="contact-location">
+                  <div class="contact-icon">📍</div>
+                  <div>
+                    <div class="contact-label">Location</div>
+                    <div class="contact-val">Indonesia</div>
+                  </div>
+                </div>
+                <div class="contact-item" id="contact-availability">
+                  <div class="contact-icon">🕐</div>
+                  <div>
+                    <div class="contact-label">Availability</div>
+                    <div class="contact-val">Open to opportunities</div>
+                  </div>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-btn" id="social-github" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                  </svg>
+                </a>
+                <a href="#" class="social-btn" id="social-linkedin" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+                <a href="#" class="social-btn" id="social-twitter" aria-label="Twitter">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <input type="text" id="form-name" placeholder="Your Name" required autocomplete="name" />
+                <label for="form-name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="form-email" placeholder="Your Email" required autocomplete="email" />
+                <label for="form-email">Your Email</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="form-subject" placeholder="Subject" required />
+                <label for="form-subject">Subject</label>
+              </div>
+              <div class="form-group">
+                <textarea id="form-message" placeholder="Your Message" rows="5" required></textarea>
+                <label for="form-message">Your Message</label>
+              </div>
+              <button type="submit" class="btn btn-primary full-width" id="submit-btn">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+              <div class="form-success" id="formSuccess">✅ Pesan berhasil dikirim! Saya akan segera menghubungi Anda.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <span class="brand-bracket"></span>Agam<span class="brand-bracket"></span>
+            </div>
+            <p>opsional & code © 2026 Agam. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+
+</html>
